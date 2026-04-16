@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phainon AI - Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Global Style -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-layout">
+        <!-- Sidebar -->
+        <div class="chat-sidebar">
+            <div class="sidebar-header d-flex justify-content-between align-items-center">
+                <i class="bi bi-list fs-3"></i>
+                <a href="index.html" class="text-white text-decoration-none fs-6" style="opacity: 0.8;">
+                    <i class="bi bi-house-door-fill me-1"></i> Kembali ke Home
+                </a>
+            </div>
+            
+            <a href="#" class="new-chat-btn">
+                <i class="bi bi-plus-circle"></i> New Chat
+            </a>
+
+            <div class="chat-history-list">
+                <a href="#" class="chat-history-item active">how to create...</a>
+                <a href="#" class="chat-history-item">An analysis on...</a>
+                <a href="#" class="chat-history-item">Veripix: a ....</a>
+                <a href="#" class="chat-history-item">Website UI/UX...</a>
+            </div>
+
+            <div class="sidebar-footer">
+                <a href="#" class="settings-btn">
+                    <i class="bi bi-gear-fill"></i> Settings
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="chat-main">
+            <!-- Header -->
+            <div class="chat-header">
+                <div class="chat-brand">Phainon AI</div>
+                <div class="chat-title">How to create a triangle pattern</div>
+                <div class="chat-user-profile">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages">
+                <div class="message-bubble message-user">
+                    How can i make a triangle pattern in java?
+                </div>
+                
+                <div style="clear: both;"></div>
+
+                <div class="message-ai">
+                    <p class="mb-2">Certainly! Creating a triangle pattern in Java typically involves using nested loops. The outer loop controls the number of rows, and the inner loop controls the number of columns (or asterisks) to print in each row. Here is a simple example of how to achieve this:</p>
+                    
+                    <div class="code-block-wrapper">
+                        <div class="code-block-header">
+                            <span>Java</span>
+                            <i class="bi bi-files"></i>
+                        </div>
+                        <pre class="code-block-content"><code><span class="code-keyword">public class</span> <span class="code-type">Loop</span> {
+    <span class="code-keyword">public static void</span> main(<span class="code-type">String</span>[] args) {
+        <span class="code-keyword">for</span> (<span class="code-keyword">int</span> i = <span class="code-string">1</span>; i <= <span class="code-string">5</span>; i++) { <span class="code-comment">//this will be your loop</span>
+            <span class="code-keyword">for</span> (<span class="code-keyword">int</span> j = <span class="code-string">1</span>; j <= i; j++) {
+                System.out.print(<span class="code-string">"* "</span>);
+            }
+            System.out.println();
+        }
+    }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input-area">
+                <div class="chat-input-wrapper">
+                    <input type="text" class="chat-input" placeholder="Message model">
+                    <div class="chat-actions">
+                        <i class="bi bi-mic"></i>
+                        <i class="bi bi-send-fill fs-5"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
